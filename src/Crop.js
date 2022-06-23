@@ -15,5 +15,3 @@ export default function Crop({ name, classification, description, icon }) {
 }
 
 // Make Link
-// Add Icon
-// Add CSS

@@ -7,7 +7,7 @@ export default function CropList({ crops }) {
         crops.map((crop, i) => {
           return <Crop
             {...crop}
-            key={crop.name + i + crop.id} />;
+            key={crop.name + i} />;
         })
       }
     </div>
