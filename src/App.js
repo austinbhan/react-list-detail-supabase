@@ -14,8 +14,8 @@ import CropPage from './CropPage';
 function App() {
   return (
     <>
-      <Router>
-        <div className="App">
+      <div className="App">
+        <Router>
           <Switch>
             <Route exact path = '/'> 
               <CropPage />
@@ -25,8 +25,8 @@ function App() {
               />
             </Route>
           </Switch>
-        </div>
-      </Router>
+        </Router>
+      </div>
     </>
   );
 }
