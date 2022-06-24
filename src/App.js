@@ -1,42 +1,31 @@
 import React from 'react';
-import { useEffect, useState } from 'react';
+
 import './App.css';
-import { getCrops } from './services/fetch-utlis';
+
 import { BrowserRouter as Router,
-  Switch,
+// Add Switch when Ready
   Route,
 } from 'react-router-dom';
 
-import CropList from './CropList';
+
 import CropDetail from './CropDetail';
+import CropPage from './CropPage';
 
 function App() {
-  const [crops, setCrops] = useState([]);
-
-  useEffect(() => {
-    async function fetch() {
-      const cropsList = await getCrops(); // Add {from to} when adding pagination
-
-      setCrops(cropsList);
-    }
-    fetch();
-  }, []);
-
   return (
     <>
       <Router>
         <div className="App">
-          <Switch>
-            <h1>This is the front page</h1>
-            <Route exact path = '/'> 
-              <CropList // Your List of Crops
-                crops={crops}/>
-            </Route>
-            <Route exact path ='/crops/:id'>
-              <CropDetail  // Details go Here
-              />
-            </Route>
-          </Switch>
+          {/* Need to Add Switch */}
+          <h1>This is the front page</h1>
+          <Route exact path = '/'> 
+            <CropPage />
+          </Route>
+          <Route exact path ='/crops/:id'>
+            <CropDetail  // Details go Here
+            />
+          </Route>
+          {/* Need to Add Switch */}
         </div>
       </Router>
     </>
