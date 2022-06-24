@@ -2,9 +2,13 @@
   text-align: center;
 }
 .crops {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap:5px;
+  padding: 5px;
+  background-color: red;
+  width: 615px;
 }
 .crop {
   display: flex;
@@ -36,3 +40,4 @@
   align-items: center;
   justify-content: center;
 }
+
