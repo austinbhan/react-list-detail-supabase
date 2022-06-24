@@ -16,14 +16,16 @@ export default function CropDetail() {
 
   return (
     <>
-      <Link to='/'>Home</Link>
-      <div className="crop-detail">
-        <img className="icon" src={crop.icon}/>
-        <h1>Name: {crop.name}</h1>
-        <h3>Description: {crop.description}</h3>
-        <p>Classification: {crop.classification}</p>
-        <p>Days to Harvest: {crop.growth_time}</p>        
-        <p>When to harvest them: {crop.season}</p>
+      <div className="crop-container">
+        <Link to='/'>Home</Link>
+        <div className="crop-detail">
+          <img className="icon" src={crop.icon}/>
+          <h3>Name: {crop.name}</h3>
+          <h4>Description: {crop.description}</h4>
+          <p>Classification: {crop.classification}</p>
+          <p>Days to Harvest: {crop.growth_time}</p>        
+          <p>When to harvest them: {crop.season}</p>
+        </div>
       </div>
     </>
   );
