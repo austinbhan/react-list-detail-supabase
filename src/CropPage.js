@@ -38,9 +38,10 @@ export default function CropPage() {
           <button disabled={page <= 0} onClick={() => setPage(page - 1)}>Previous</button>
           <button disabled={page >= lastPage} onClick={() => setPage(page + 1)}>Next</button>
         </div>
-        <CropList
-          crops={crops} />
-        
+        <div className="crop-list">
+          <CropList
+            crops={crops} />
+        </div>
       </div>
     </>
   );

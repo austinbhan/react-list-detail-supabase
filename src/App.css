@@ -7,7 +7,7 @@
   grid-template-rows: 1fr 1fr;
   gap:5px;
   padding: 5px;
-  background-color: red;
+  background-color: blue;
   width: 615px;
 }
 .crop {
@@ -41,3 +41,7 @@
   justify-content: center;
 }
 
+.crop-list {
+  display: flex;
+  justify-content: center;
+}
