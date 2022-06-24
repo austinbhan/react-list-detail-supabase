@@ -20,4 +20,3 @@ export default function Crop({ name, classification, description, icon, id }) {
   );
 }
 
-// Make Link
