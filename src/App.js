@@ -26,15 +26,17 @@ function App() {
     <>
       <Router>
         <div className="App">
-          <h1>This is the front page</h1>
-          <Route exact path = '/'> 
-            <CropList // Your List of Crops
-              crops={crops}/>
-          </Route>
-          <Route exact path ='/crops/:id'>
-            <CropDetail  // Details go Here
-            />
-          </Route>
+          <Switch>
+            <h1>This is the front page</h1>
+            <Route exact path = '/'> 
+              <CropList // Your List of Crops
+                crops={crops}/>
+            </Route>
+            <Route exact path ='/crops/:id'>
+              <CropDetail  // Details go Here
+              />
+            </Route>
+          </Switch>
         </div>
       </Router>
     </>
