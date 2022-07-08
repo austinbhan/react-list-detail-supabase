@@ -14,6 +14,9 @@ import CropPage from './CropPage';
 function App() {
   return (
     <>
+      <div className="title">
+        <h1 >Stardew Valley Crop Mods</h1>
+      </div>
       <div className="App">
         <Router>
           <Switch>

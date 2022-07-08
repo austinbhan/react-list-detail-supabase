@@ -1,9 +1,11 @@
 .App {
   text-align: center;
-  background-image: url('./wallpaper.jpg');
   width: 100%;
   height: 100%;
+}
 
+body {
+background-image: url('./wallpaper.jpg');
 }
 
 .crops {
@@ -12,7 +14,7 @@
   grid-template-rows: 1fr 1fr;
   gap:5px;
   padding: 5px;
-  width: 615px;
+
 }
 .crop {
   display: flex;
@@ -48,4 +50,10 @@
 .crop-list {
   display: flex;
   justify-content: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: white;
 }
